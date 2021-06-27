@@ -227,7 +227,7 @@ h1:nth-child(3) {
     }
 
     .description, .container {
-        width: 100vw;
+        width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
