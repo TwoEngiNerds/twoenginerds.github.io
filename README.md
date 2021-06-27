@@ -5,7 +5,7 @@ Special thanks to W3C and Gaurav from https://dev.to/devggaurav/let-s-build-a-re
 ## To-do:
 - [x] Create parallelogram pagination and Topic Placeholders and title for side
 - [ ] Create blog pages
-- [ ] Create about page
+- [x] Create about page
 
 ## Z-index:
 - header: 3
