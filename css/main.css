@@ -270,7 +270,6 @@
         width: 100%;
 
         grid-template-columns: 1fr;
-        grid-template-rows: 60% 39% 1%;
         grid-template-areas: 
             "main"
             "side"
