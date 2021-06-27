@@ -151,7 +151,7 @@ body {
 
 /* to block links */
 .block {
-    cursor: not-allowed;
+    cursor: not-allowed !important;
 }
 
 /* responsive nav bar */
