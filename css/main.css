@@ -6,7 +6,7 @@
     background-color: var(--light-black);
 }
 
-#landing::before, #main::before, #side::before {
+#landing::before, #main::before, #side::before, .pagination::before {
     display: block; 
     content: "";
 
@@ -86,7 +86,7 @@
     max-height: 21.875rem;
     height: 21.875rem;
 
-    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .card {
@@ -185,7 +185,7 @@
     grid-template-areas: 
         "img desc";
     
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 
     max-width: 80%;
     width: 80%;
@@ -235,8 +235,8 @@
 	display: inline-block;
 	width: 100%; /* fills the whole div */
 	text-align: center;
-    margin-top: 2rem;
 }
+
 .pagination > a {
     display: inline-block;
 

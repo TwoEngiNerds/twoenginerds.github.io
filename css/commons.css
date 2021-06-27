@@ -152,6 +152,11 @@ body {
     cursor: not-allowed !important;
 }
 
+/* gap above a div */
+.gap {
+    margin-top: 10vh;
+}
+
 /* responsive nav bar */
 @media screen and (max-width: 835px) {
     .nav-menu {
