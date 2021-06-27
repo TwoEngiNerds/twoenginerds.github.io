@@ -7,8 +7,8 @@
     display: block; 
     content: ""; 
 
-    height: 10vh; 
-    margin-top: -10vh;
+    height: var(--fixed-height); 
+    margin-top: var(--neg-fixed-height);
 
     visibility: hidden; 
     pointer-events: none;
@@ -24,7 +24,7 @@
 }
 
 
-.section-container > .who-container {
+.section-container > .content {
     position: absolute;
 
     width: 100%;
@@ -39,7 +39,7 @@
     z-index: 2;
 }
 
-.who-container > h1 {
+.content > h1 {
     text-align: center;
 
     font-family: var(--landing-desc-font);
@@ -94,13 +94,13 @@
 
 /* for normal laptop screens */
 @media screen and (max-width: 1600px) {
-    .who-container > h1 {
+    .content > h1 {
         font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .who-container > h1 {
+    .content > h1 {
         font-size: 1.5rem;
     }
 }

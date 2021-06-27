@@ -2,7 +2,7 @@
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: -10vh;
+    margin-top: -var(--fixed-height);
 
     padding-top: 50vh;
 
@@ -14,7 +14,7 @@
     margin-left: 15%;
     margin-right: 15%;
     
-    margin-top: 10vh;
+    margin-top: var(--fixed-height);
 
     text-align: center;
 

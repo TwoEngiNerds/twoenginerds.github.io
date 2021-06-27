@@ -10,7 +10,7 @@
     display: block; 
     content: "";
 
-    height: 10vh; 
+    height: var(--fixed-height);
 
     visibility: hidden; 
     pointer-events: none;

@@ -21,8 +21,10 @@
     --landing-desc-font: 'Dosis', sans-serif;
     --landing-main-title: 'Press Start 2P', cursive;
 
-    --nav-height: calc(0.5*10vh);
-    --nav-top-bot-margin: calc(0.25*10vh);
+    --fixed-height: 5rem;
+    --neg-fixed-height: -5rem;
+    --nav-height: calc(0.5*5rem);
+    --nav-top-bot-margin: calc(0.25*5rem);
 }
 
 * {
@@ -49,8 +51,8 @@ body {
     max-width: 100%;
     width: 100%;
     
-    max-height: 10vh;
-    height: 10vh;
+    max-height: var(--fixed-height);
+    height: var(--fixed-height);
 
     z-index: 3;
 
@@ -138,8 +140,8 @@ body {
     max-width: 100%;
     width: 100%;
 
-    max-height: 10vh;
-    height: 10vh;
+    max-height: var(--fixed-height);
+    height: var(--fixed-height);
 
     font-family: var(--title-font);
 
@@ -154,7 +156,7 @@ body {
 
 /* gap above a div */
 .gap {
-    margin-top: 10vh;
+    margin-top: var(--fixed-height);
 }
 
 /* responsive nav bar */
@@ -162,7 +164,7 @@ body {
     .nav-menu {
         position: fixed;
         left: -100%; /* to hide menu when not using */
-        top: 10vh;
+        top: var(--fixed-height);
         flex-direction: column;
         width: 100%;
         text-align: center;
