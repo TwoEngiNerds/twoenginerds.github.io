@@ -98,3 +98,9 @@
         font-size: 2rem;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .who-container > h1 {
+        font-size: 1.5rem;
+    }
+}
