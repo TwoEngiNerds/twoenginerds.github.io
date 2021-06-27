@@ -149,6 +149,11 @@ body {
     color: var(--pastel-orange);
 }
 
+/* to block links */
+.block {
+    cursor: not-allowed;
+}
+
 /* responsive nav bar */
 @media screen and (max-width: 835px) {
     .nav-menu {

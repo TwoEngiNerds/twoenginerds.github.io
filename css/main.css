@@ -194,7 +194,7 @@
 }
 
 .side-block:hover {
-    background: var(--darker-white);
+    background: var(--pastel-orange);
     border-radius: 1rem;
     cursor: pointer;
 }
