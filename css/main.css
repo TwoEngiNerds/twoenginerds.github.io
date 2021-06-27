@@ -339,7 +339,8 @@
     .desc > .topic {
         font-size: 0.8rem;
     }
-    .parallelogram-underline {
+    .side-title .parallelogram-underline,
+    .main-title .parallelogram-underline {
         height: 0.3rem;
     }
 }
