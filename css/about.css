@@ -1,0 +1,100 @@
+.about-grid-container {
+    max-width: 100vw;
+    width: 100vw;
+}
+
+.about-grid-container::before {
+    display: block; 
+    content: ""; 
+
+    height: 10vh; 
+    margin-top: -10vh;
+
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+/* about */
+.section-container {
+    max-height: 100vh;
+    height: 100vh;
+
+    max-width: 100vw;
+    width: 100vw;
+}
+
+
+.section-container > .who-container {
+    position: absolute;
+
+    width: 100%;
+
+    max-width: 60vw;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+    padding-top: 30vh;
+
+    z-index: 2;
+}
+
+.who-container > h1 {
+    text-align: center;
+
+    font-family: var(--landing-desc-font);
+
+    font-size: 3rem;
+}
+
+#who {
+    background: url(../images/who.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#what {
+    background: url(../images/mission.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hope {
+    background: url(../images/goal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* overlay to make bg less opaque */
+.overlay {
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    opacity: 0.3;
+  
+    background-color: var(--black);
+
+    z-index: 1;
+}
+
+.overlay.second {
+    top: 100vh;
+}
+
+.overlay.third {
+    top: 200vh;
+}
+
+/* for normal laptop screens */
+@media screen and (max-width: 1600px) {
+    .who-container > h1 {
+        font-size: 2rem;
+    }
+}

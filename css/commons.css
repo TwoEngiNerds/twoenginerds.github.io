@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* variables */
+:root {
+    --black: rgb(0, 0, 0);
+    --light-black: rgb(20, 20, 20);
+    --lighter-black: rgba(0, 0, 0, 0.5);
+    --white: rgb(255, 255, 255);
+    --dark-white: rgb(243, 243, 243);
+    --darker-white: rgb(225, 225, 225);
+    --pastel-orange: rgb(255, 179, 71);
+    --fadein-bg: rgba(0,0,0,0.3);
+    --colour1: #67f3da;
+    --colour2: #f16f6f;
+
+    --title-font: 'Share Tech', sans-serif;
+    --desc-font: 'Roboto', sans-serif;
+    --landing-desc-font: 'Dosis', sans-serif;
+    --landing-main-title: 'Press Start 2P', cursive;
+
+    --nav-height: calc(0.5*10vh);
+    --nav-top-bot-margin: calc(0.25*10vh);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: var(--darker-white);
+    color: var(--black);
+
+    max-width: 100vw;
+    width: 100vw;
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+
+    max-width: 100vw;
+    width: 100vw;
+    
+    max-height: 10vh;
+    height: 10vh;
+
+    z-index: 3;
+
+    background-color: var(--light-black);
+    color: var(--pastel-orange);
+
+    font-family: var(--title-font);
+}
+
+.header li {
+    list-style: none;
+}
+
+.header a {
+    text-decoration: none;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* To centralise the nav bar */
+    max-height: var(--nav-height);
+    height: var(--nav-height);
+    margin-top: var(--nav-top-bot-margin);
+    margin-bottom: var(--nav-top-bot-margin);
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hamburger {
+    display: none;
+
+    /* To centralise the nav bar */
+    max-height: var(--nav-height);
+    height: var(--nav-height);
+    margin-top: var(--nav-top-bot-margin);
+    margin-bottom: var(--nav-top-bot-margin);
+
+    padding-right: 1rem;
+}
+
+.bar {
+    display: block;
+    width: 1.5625rem;
+    height: 0.1875rem;
+    margin: 0.3125rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--pastel-orange);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.nav-item {
+    margin-left: 3rem;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--pastel-orange);
+}
+
+.nav-link:hover{
+    color: var(--darker-white);
+}
+
+.nav-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--pastel-orange);
+}
+
+
+/* footer */
+.footer {
+    bottom: 0;
+
+    max-width: 100vw;
+    width: 100vw;
+
+    max-height: 10vh;
+    height: 10vh;
+
+    font-family: var(--title-font);
+
+    background-color: var(--light-black);
+    color: var(--pastel-orange);
+}
+
+/* responsive nav bar */
+@media screen and (max-width: 835px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%; /* to hide menu when not using */
+        top: 10vh;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+        background-color: var(--light-black);
+    }
+
+    .nav-menu.active {
+        left: 0; /* when active, menu remain aligned to left position 0 */
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* converts hamburger into cross */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
