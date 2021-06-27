@@ -87,10 +87,10 @@
     margin-left: 10%;
     margin-right: 10%;
 
-    max-height: 21.875rem;
-    height: 21.875rem;
+    max-height: 45vh;
+    height: 45vh;
 
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .card {
@@ -189,7 +189,7 @@
     grid-template-areas: 
         "img desc";
     
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     max-width: 80%;
     width: 80%;
