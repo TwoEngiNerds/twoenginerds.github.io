@@ -39,11 +39,11 @@
 
     font-size: 2rem;
 
-    max-width: 40%;
-    width: 40%;
+    max-width: 15rem;
+    width: 15rem;
     
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 1rem;
 }
 
@@ -53,18 +53,17 @@
 
     font-size: 0.9rem;
 
-    max-width: 40%;
-    width: 40%;
-
-    margin-left: 30%;
-    margin-right: 30%;
+    max-width: 6rem;
+    width: 6rem;
+    
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 1rem;
 }
 
 /* parallelogram */
 .parallelogram-underline {
-    max-width: 100%;
-    width: auto;
+    width: 100%;
 
     margin-top: -0.5rem;
 
@@ -84,9 +83,10 @@
     position: relative;
     max-width: 80%;
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-
+    margin-left: auto;
+    margin-right: auto;
+     
+    /* edit this to change the card height */
     max-height: 45vh;
     height: 45vh;
 
@@ -193,8 +193,8 @@
 
     max-width: 80%;
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .side-block:hover {
@@ -279,10 +279,11 @@
     .side-title {    
         font-size: 2rem;
 
-        max-width: 40%;
-        width: 40%;
-        margin-left: 30%;
-        margin-right: 30%;
+        max-width: 15rem;
+        width: 15rem;
+        
+        margin-left: auto;
+        margin-right: auto;
 
         margin-bottom: 1rem;
     }
@@ -293,11 +294,10 @@
         height: 0.5rem;
     }
 
+    /* edit this to change the width of related segment */
     .side-block {
         max-width: 40%;
         width: 40%;
-        margin-left: 30%;
-        margin-right: 30%;
     }
     /*##############################*/
     
@@ -319,6 +319,8 @@
     }
     .side-title, .main-title {
         font-size: 1.8rem;
+        max-width: 13rem;
+        width: 13rem;
     } 
     .summary {
         font-size: 1rem;
@@ -331,12 +333,34 @@
     }
     .side-title, .main-title {
         font-size: 1.1rem;
+        max-width: 8rem;
+        width: 8rem;
     }
     .desc > .title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .desc > .topic {
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+    .side-block {
+        max-width: 60%;
+        width: 60%;
+    }
+    .side-title .parallelogram-underline,
+    .main-title .parallelogram-underline {
+        height: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card-title {
+        font-size: 2.3rem;
+    }
+    .desc > .title {
+        font-size: 1.3rem;
+    }
+    .desc > .topic {
+        font-size: 1rem;
     }
     .side-title .parallelogram-underline,
     .main-title .parallelogram-underline {

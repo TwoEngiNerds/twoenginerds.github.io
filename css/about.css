@@ -103,6 +103,18 @@
     .content > h1 {
         font-size: 1.5rem;
     }
+    #who {
+        background: none;
+        background-color: var(--pastel-pink);
+    }
+    #what {
+        background: none;
+        background-color: var(--pastel-blue);
+    }
+    #hope {
+        background: none;
+        background-color: var(--pastel-pink);
+    }
 }
 
 
