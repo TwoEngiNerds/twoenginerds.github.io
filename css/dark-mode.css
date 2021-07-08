@@ -100,8 +100,8 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 .dark .slider.round:before {
-    background-color: var(--lighter-black);
+    background-color: var(--black);
 }
 .light .slider.round:before {
-    background-color: var(--darker-white);
+    background-color: var(--white);
 }
