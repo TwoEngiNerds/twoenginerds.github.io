@@ -12,6 +12,7 @@
     --dark-white: rgb(243, 243, 243);
     --darker-white: rgb(225, 225, 225);
     --pastel-orange: rgb(255, 179, 71);
+    --pastel-blue: #28546d;
     --fadein-bg: rgba(0,0,0,0.3);
     --colour1: #67f3da;
     --colour2: #f16f6f;
@@ -38,8 +39,8 @@
 
 body {
     margin: 0;
-    background-color: var(--darker-white);
-    color: var(--black);
+    background-color: var(--lighter-black);
+    color: var(--light-black);
 
     max-width: 100%;
     width: 100%;
@@ -59,7 +60,6 @@ body {
     z-index: 3;
 
     background-color: var(--light-black);
-    color: var(--pastel-orange);
 
     font-family: var(--title-font);
 }
@@ -121,19 +121,19 @@ body {
 .nav-link{
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--pastel-orange);
-}
-
-.nav-link:hover{
-    color: var(--darker-white);
+    color: var(--pastel-blue);
 }
 
 .nav-logo {
     font-size: 2rem;
     font-weight: 500;
-    color: var(--pastel-orange);
+    color: var(--pastel-blue);
 }
 
+.nav-link:hover,
+.nav-logo:hover {
+    color: var(--pastel-orange);
+}
 
 /* footer */
 .footer {
@@ -148,7 +148,7 @@ body {
     font-family: var(--title-font);
 
     background-color: var(--light-black);
-    color: var(--pastel-orange);
+    color: var(--pastel-blue);
 }
 
 /* to block links */

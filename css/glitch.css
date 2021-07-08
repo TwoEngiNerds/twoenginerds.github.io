@@ -1,7 +1,7 @@
 .container {
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 14%;
+    margin-right: 14%;
     margin-top: var(--neg-fixed-height);
 
     padding-top: 50vh;
@@ -30,7 +30,7 @@
     font-weight: 400;
 
     font-family: var(--landing-main-title);
-    color: var(--darker-white);
+    color: var(--white);
 
     /*Animation*/
     animation: glitch1 2.5s infinite;
@@ -227,9 +227,9 @@ h1:nth-child(3) {
     }
 
     .description, .container {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -242,6 +242,7 @@ h1:nth-child(3) {
 @media screen and (max-width: 700px) {
     .container h1 {
         font-size: 3rem;
+        letter-spacing: 5px;
     }
     .description h1 {
         font-size: 1.2rem;
