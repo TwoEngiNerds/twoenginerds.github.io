@@ -38,6 +38,10 @@ const nav_logo = document.querySelector(".nav-logo");
 const underline = document.querySelectorAll(".parallelogram-underline");
 const side_block = document.querySelectorAll(".side-block");
 const pagination = document.querySelectorAll(".buttons");
+const card_title = document.querySelectorAll(".card-title");
+const card_desc = document.querySelectorAll(".card-description");
+const summary = document.querySelectorAll(".summary");
+
 
 darkMode.addEventListener("click", changeMode);
 
@@ -58,6 +62,15 @@ function changeMode() {
     for (let i=0; i<pagination.length; i++) {
       pagination[i].classList.remove("light");
     }
+    for (let i=0; i<card_title.length; i++) {
+      card_title[i].classList.remove("light");
+    }
+    for (let i=0; i<card_desc.length; i++) {
+      card_desc[i].classList.remove("light");
+    }
+    for (let i=0; i<summary.length; i++) {
+      summary[i].classList.remove("light");
+    }
     body.classList.remove("light");
     nav_logo.classList.remove("light");
   } 
@@ -76,6 +89,15 @@ function changeMode() {
     }
     for (let i=0; i<pagination.length; i++) {
       pagination[i].classList.add("light");
+    }
+    for (let i=0; i<card_title.length; i++) {
+      card_title[i].classList.add("light");
+    }
+    for (let i=0; i<card_desc.length; i++) {
+      card_desc[i].classList.add("light");
+    }
+    for (let i=0; i<summary.length; i++) {
+      summary[i].classList.add("light");
     }
     body.classList.add("light");
     nav_logo.classList.add("light");

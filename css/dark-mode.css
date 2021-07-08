@@ -3,10 +3,6 @@ body.light {
     background-color: var(--darker-white);
 }
 
-.bar.light {
-    background-color: var(--pastel-orange);
-}
-
 .nav-link.light,
 .nav-logo.light {
     color: var(--pastel-orange);
@@ -21,17 +17,18 @@ body.light {
     color: var(--darker-white);
 }
 
-.parallelogram-underline.light {
-	background-color: var(--pastel-orange);
-}
-
-.side-block.light:hover {
-    background: var(--pastel-orange);
-}
-
+.bar.light,
 .buttons.light:hover,
-.buttons.light.selected {
+.buttons.light.selected,
+.parallelogram-underline.light,
+.side-block.light:hover {
 	background-color: var(--pastel-orange);
+}
+
+.card-title.light,
+.card-description.light,
+.summary.light {
+    color: var(--darker-white);
 }
 
 /********************/
