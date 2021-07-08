@@ -32,6 +32,7 @@ for (let i=0; i<fadein.length; i++) {
 /* dark mode button */
 const darkMode = document.querySelector("#darkMode");
 const body = document.querySelector("body");
+const bar = document.querySelectorAll(".bar");
 const nav_link = document.querySelectorAll(".nav-link");
 const nav_logo = document.querySelector(".nav-logo");
 const underline = document.querySelectorAll(".parallelogram-underline");
@@ -42,8 +43,9 @@ darkMode.addEventListener("click", changeMode);
 
 function changeMode() {
   if (darkMode.checked) {
-    body.classList.remove("light");
-    nav_logo.classList.remove("light");
+    for (let i=0; i<bar.length; i++) {
+      bar[i].classList.remove("light");
+    }
     for (let i=0; i<underline.length; i++) {
       underline[i].classList.remove("light");
     }
@@ -56,10 +58,13 @@ function changeMode() {
     for (let i=0; i<pagination.length; i++) {
       pagination[i].classList.remove("light");
     }
+    body.classList.remove("light");
+    nav_logo.classList.remove("light");
   } 
   else {
-    body.classList.add("light");
-    nav_logo.classList.add("light");
+    for (let i=0; i<bar.length; i++) {
+      bar[i].classList.add("light");
+    }
     for (let i=0; i<underline.length; i++) {
       underline[i].classList.add("light");
     }
@@ -72,6 +77,8 @@ function changeMode() {
     for (let i=0; i<pagination.length; i++) {
       pagination[i].classList.add("light");
     }
+    body.classList.add("light");
+    nav_logo.classList.add("light");
   }
 }
 

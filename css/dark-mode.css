@@ -2,6 +2,11 @@
 body.light {
     background-color: var(--darker-white);
 }
+
+.bar.light {
+    background-color: var(--pastel-orange);
+}
+
 .nav-link.light,
 .nav-logo.light {
     color: var(--pastel-orange);

@@ -104,7 +104,7 @@ body {
     margin: 0.3125rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--pastel-orange);
+    background-color: var(--pastel-blue);
 }
 
 .nav-menu {
