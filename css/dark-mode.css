@@ -57,18 +57,23 @@ body.light {
 .slider {
     position: absolute;
     cursor: pointer;
+
+    box-shadow: 0 0 5px var(--black);
+
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 .dark .slider {
-    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    /* background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); */
+    background-color: var(--pastel-blue);
 }
 .light .slider {
-    background: #3ca8c6;
+    background-color: var(--pastel-orange);
 }
 .slider:before {
     position: absolute;
@@ -77,14 +82,10 @@ body.light {
     width: 20px;
     left: 4px;
     bottom: 3px;
-    background-color: var(--lighter-black);
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
-}
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
@@ -97,8 +98,12 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 .dark .slider.round:before {
-    background-color: var(--black);
+    margin-left: -8px;
+    background-color: transparent;
+    box-shadow: 8px 0px 0px 0px var(--black); 
 }
 .light .slider.round:before {
+    margin-left: 0px;
     background-color: var(--white);
+    box-shadow: none; 
 }
