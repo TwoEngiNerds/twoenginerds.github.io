@@ -8,17 +8,14 @@ body.light {
 }
 
 .nav-link.light,
-.nav-logo.light {
+.nav-logo.light,
+.footer.light {
     color: var(--pastel-orange);
 }
 
 .nav-link.light:hover ,
 .nav-logo.light:hover {
     color: var(--pastel-blue);
-}
-
-.footer.light {
-    color: var(--darker-orange);
 }
 
 .bar.light,
