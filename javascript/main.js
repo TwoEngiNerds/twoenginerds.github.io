@@ -41,88 +41,75 @@ const pagination = document.querySelectorAll(".buttons");
 const card_title = document.querySelectorAll(".card-title");
 const card_desc = document.querySelectorAll(".card-description");
 const summary = document.querySelectorAll(".summary");
-
+const footer = document.querySelector(".footer");
 
 darkMode.addEventListener("click", changeMode);
 
-function changeMode() {
-  if (darkMode.checked) {
-    for (let i=0; i<bar.length; i++) {
-      bar[i].classList.remove("light");
-    }
-    for (let i=0; i<underline.length; i++) {
-      underline[i].classList.remove("light");
-    }
-    for (let i=0; i<nav_link.length; i++) {
-      nav_link[i].classList.remove("light");
-    }
-    for (let i=0; i<side_block.length; i++) {
-      side_block[i].classList.remove("light");
-    }
-    for (let i=0; i<pagination.length; i++) {
-      pagination[i].classList.remove("light");
-    }
-    for (let i=0; i<card_title.length; i++) {
-      card_title[i].classList.remove("light");
-    }
-    for (let i=0; i<card_desc.length; i++) {
-      card_desc[i].classList.remove("light");
-    }
-    for (let i=0; i<summary.length; i++) {
-      summary[i].classList.remove("light");
-    }
-    body.classList.remove("light");
-    nav_logo.classList.remove("light");
-  } 
-  else {
-    for (let i=0; i<bar.length; i++) {
-      bar[i].classList.add("light");
-    }
-    for (let i=0; i<underline.length; i++) {
-      underline[i].classList.add("light");
-    }
-    for (let i=0; i<nav_link.length; i++) {
-      nav_link[i].classList.add("light");
-    }
-    for (let i=0; i<side_block.length; i++) {
-      side_block[i].classList.add("light");
-    }
-    for (let i=0; i<pagination.length; i++) {
-      pagination[i].classList.add("light");
-    }
-    for (let i=0; i<card_title.length; i++) {
-      card_title[i].classList.add("light");
-    }
-    for (let i=0; i<card_desc.length; i++) {
-      card_desc[i].classList.add("light");
-    }
-    for (let i=0; i<summary.length; i++) {
-      summary[i].classList.add("light");
-    }
-    body.classList.add("light");
-    nav_logo.classList.add("light");
+function enableDarkMode() {
+  for (let i=0; i<bar.length; i++) {
+    bar[i].classList.remove("light");
   }
+  for (let i=0; i<underline.length; i++) {
+    underline[i].classList.remove("light");
+  }
+  for (let i=0; i<nav_link.length; i++) {
+    nav_link[i].classList.remove("light");
+  }
+  for (let i=0; i<side_block.length; i++) {
+    side_block[i].classList.remove("light");
+  }
+  for (let i=0; i<pagination.length; i++) {
+    pagination[i].classList.remove("light");
+  }
+  for (let i=0; i<card_title.length; i++) {
+    card_title[i].classList.remove("light");
+  }
+  for (let i=0; i<card_desc.length; i++) {
+    card_desc[i].classList.remove("light");
+  }
+  for (let i=0; i<summary.length; i++) {
+    summary[i].classList.remove("light");
+  }
+  body.classList.remove("light");
+  nav_logo.classList.remove("light");
+  footer.classList.remove("light");
 }
 
-// const darkMode = document.querySelector("#darkMode");
-// darkMode.addEventListener("click", changeMode);
+function disableDarkMode() {
+  for (let i=0; i<bar.length; i++) {
+    bar[i].classList.add("light");
+  }
+  for (let i=0; i<underline.length; i++) {
+    underline[i].classList.add("light");
+  }
+  for (let i=0; i<nav_link.length; i++) {
+    nav_link[i].classList.add("light");
+  }
+  for (let i=0; i<side_block.length; i++) {
+    side_block[i].classList.add("light");
+  }
+  for (let i=0; i<pagination.length; i++) {
+    pagination[i].classList.add("light");
+  }
+  for (let i=0; i<card_title.length; i++) {
+    card_title[i].classList.add("light");
+  }
+  for (let i=0; i<card_desc.length; i++) {
+    card_desc[i].classList.add("light");
+  }
+  for (let i=0; i<summary.length; i++) {
+    summary[i].classList.add("light");
+  }
+  body.classList.add("light");
+  nav_logo.classList.add("light");
+  footer.classList.add("light");
+}
 
-// const parameters = document.querySelectorAll(
-//   "body",
-//   ".nav-link",
-//   ".nav-logo",
-//   ".parallelogram-underline",
-//   ".side-block"
-// );
-
-// function changeMode() {
-//   if (darkMode.checked) {
-//     for (let i=0; i<parameters.length; i++) {
-//       parameters[i].classList.remove("light");
-//     }
-//   } else {
-//     for (let i=0; i<parameters.length; i++) {
-//       parameters[i].classList.add("light");
-//     }
-//   }
-// }
+function changeMode() {
+  if (darkMode.checked) {
+    enableDarkMode();
+  } 
+  else {
+    disableDarkMode();
+  }
+}
