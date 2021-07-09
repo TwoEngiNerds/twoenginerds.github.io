@@ -1,3 +1,7 @@
+:root {
+    --transition-time: 0.15s;
+}
+
 /* change colours */
 body.light {
     background-color: var(--darker-white);
@@ -65,8 +69,8 @@ body.light {
     right: 0;
     bottom: 0;
 
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: var(--transition-time);
+    transition: var(--transition-time);
 }
 .dark .slider {
     /* background-color: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); */
@@ -82,8 +86,8 @@ body.light {
     width: 20px;
     left: 4px;
     bottom: 3px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: var(--transition-time);
+    transition: var(--transition-time);
 }
 
 input:checked + .slider:before {
