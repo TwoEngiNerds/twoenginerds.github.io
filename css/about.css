@@ -1,3 +1,8 @@
+@font-face {
+    font-family: neon-tube;
+    src: url(../font/NeonTubes2.otf);
+}
+
 .about-grid-container {
     max-width: 100%;
     width: 100%;
@@ -21,13 +26,18 @@
 
     max-width: 100%;
     width: 100%;
+
+    background-color: var(--light-black);
 }
 
 
 .section-container > .content {
     position: absolute;
 
-    width: 100%;
+    max-height: 80%;
+    height: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 
     max-width: 60%;
     width: 60%;
@@ -37,6 +47,8 @@
     padding-top: 30vh;
 
     z-index: 2;
+
+    color: var(--pastel-blue);
 }
 
 .content > h1 {
@@ -44,52 +56,12 @@
 
     font-family: var(--landing-desc-font);
 
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
-#who {
-    background: url(../images/who.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#what {
-    background: url(../images/mission.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#hope {
-    background: url(../images/goal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* overlay to make bg less opaque */
-.overlay {
-    position: absolute;
-    
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    height: 100vh;
-    width: 100%;
-
-    opacity: 0.3;
-  
-    background-color: var(--black);
-
-    z-index: 1;
-}
-
-.overlay.second {
-    top: 100vh;
-}
-
-.overlay.third {
-    top: 200vh;
+.neon {
+    font-family: neon-tube;
+    color: var(--neon-yellow);
 }
 
 /* for normal laptop screens */
@@ -102,18 +74,6 @@
 @media screen and (max-width: 700px) {
     .content > h1 {
         font-size: 1.5rem;
-    }
-    #who {
-        background: none;
-        background-color: var(--pastel-pink);
-    }
-    #what {
-        background: none;
-        background-color: var(--pastel-blue);
-    }
-    #hope {
-        background: none;
-        background-color: var(--pastel-pink);
     }
 }
 

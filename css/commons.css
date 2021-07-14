@@ -12,12 +12,13 @@
     --dark-white: rgb(243, 243, 243);
     --darker-white: rgb(225, 225, 225);
     --pastel-orange: rgb(255, 179, 71);
-    --pastel-blue: #28546d;
-    --fadein-bg: rgba(0,0,0,0.7);
-    --colour1: #67f3da;
-    --colour2: #f16f6f;
-    --pastel-pink: #fdc5c4;
-    --pastel-blue: #c8e8e3;
+    --pastel-blue: rgb(40, 84, 109);
+    --fadein-bg: rgba(0, 0, 0, 0.7);
+    --colour1: rgb(103, 243, 218);
+    --colour2: rgb(241, 111, 111);
+    --pastel-pink: rgb(253, 197, 196);
+    --pastel-blue: rgb(200, 232, 227);
+    --neon-yellow: rgb(250, 237, 39);
 
     --title-font: 'Share Tech', sans-serif;
     --desc-font: 'Roboto', sans-serif;
