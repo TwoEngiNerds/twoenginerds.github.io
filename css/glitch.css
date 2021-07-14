@@ -33,7 +33,7 @@
     color: var(--white);
 
     /*Animation*/
-    animation: glitch1 2.5s infinite;
+    animation: glitch1 3s infinite;
 }
 
 .caps {
@@ -47,12 +47,12 @@
   
 h1:nth-child(2) {
     color: var(--colour1);
-    animation: glitch2 2.5s infinite;
+    animation: glitch2 3s infinite;
 }
   
 h1:nth-child(3) {
     color: var(--colour2);
-    animation: glitch3 2.5s infinite;
+    animation: glitch3 3s infinite;
 }
 
 /*Keyframes*/ 
