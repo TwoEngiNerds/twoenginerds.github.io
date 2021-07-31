@@ -33,6 +33,10 @@ body.light {
     color: var(--darker-white);
 }
 
+.read-more.light {
+    background-color: var(--pastel-orange);
+}
+
 /* landing page */
 .landing-logo.light {
     background-image: url(../images/logo-light.png);
