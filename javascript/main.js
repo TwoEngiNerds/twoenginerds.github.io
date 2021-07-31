@@ -34,14 +34,13 @@ const darkMode = document.querySelector("#darkMode");
 const body = document.querySelector("body");
 const bar = document.querySelectorAll(".bar");
 const nav_link = document.querySelectorAll(".nav-link");
-const nav_logo = document.querySelector(".nav-logo");
 const underline = document.querySelectorAll(".parallelogram-underline");
 const side_block = document.querySelectorAll(".side-block");
 const pagination = document.querySelectorAll(".buttons");
 const card_title = document.querySelectorAll(".card-title");
 const card_desc = document.querySelectorAll(".card-description");
 const summary = document.querySelectorAll(".summary");
-const footer = document.querySelector(".footer");
+const footer = document.querySelector(".footer-bg");
 
 darkMode.addEventListener("click", changeMode);
 
@@ -71,7 +70,6 @@ function enableDarkMode() {
     summary[i].classList.remove("light");
   }
   body.classList.remove("light");
-  nav_logo.classList.remove("light");
   footer.classList.remove("light");
 }
 
@@ -101,7 +99,6 @@ function disableDarkMode() {
     summary[i].classList.add("light");
   }
   body.classList.add("light");
-  nav_logo.classList.add("light");
   footer.classList.add("light");
 }
 

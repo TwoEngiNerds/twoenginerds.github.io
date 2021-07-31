@@ -29,6 +29,8 @@
     --neg-fixed-height: -5rem;
     --nav-height: calc(0.5*5rem);
     --nav-top-bot-margin: calc(0.25*5rem);
+    --landing-height: calc(100vh - var(--fixed-height));
+    --footer-height: calc(3*var(--fixed-height));
 }
 
 * {
@@ -125,15 +127,12 @@ body {
     color: var(--pastel-blue);
 }
 
-.nav-logo {
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--pastel-blue);
+.nav-link:hover {
+    color: var(--pastel-orange);
 }
 
-.nav-link:hover,
-.nav-logo:hover {
-    color: var(--pastel-orange);
+.logo {
+    height: 10vh;
 }
 
 /* footer */
@@ -143,13 +142,18 @@ body {
     max-width: 100%;
     width: 100%;
 
-    max-height: var(--fixed-height);
-    height: var(--fixed-height);
+    max-height: var(--footer-height);
+    height: var(--footer-height);
 
     font-family: var(--title-font);
+}
 
-    background-color: var(--light-black);
-    color: var(--pastel-blue);
+.footer-bg {
+    height: var(--footer-height);
+    width: 100%;
+    
+    background-image: url(../images/footer-dark.jpg);
+    background-size: 100% var(--footer-height);
 }
 
 /* to block links */

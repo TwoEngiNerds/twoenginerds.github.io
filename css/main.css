@@ -16,6 +16,13 @@
     pointer-events: none;
 }
 
+.landing-logo {
+    background: url(../images/logo-dark.png);
+    background-size: 100% var(--landing-height);
+    height: var(--landing-height);
+    width: 100%;
+}
+
 /* main */
 .grid-container {
     max-width: 100%;

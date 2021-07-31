@@ -26,25 +26,32 @@
 
     max-width: 100%;
     width: 100%;
-
-    background-color: var(--light-black);
+    
+    background-image: url(../images/footer-dark.jpg);
+    background-size: 100% 100vh;
 }
 
-
-.section-container > .content {
+.panel {
     position: absolute;
 
-    max-height: 80%;
-    height: 80%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    max-width: 100%;
+    width: 100%;
 
-    max-width: 60%;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    max-height: 40vh;
+    height: 40vh;
 
-    padding-top: 30vh;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.panel > .content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     z-index: 2;
 

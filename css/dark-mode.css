@@ -18,6 +18,7 @@ body.light {
     color: var(--pastel-blue);
 }
 
+/* colour accents */
 .bar.light,
 .buttons.light:hover,
 .buttons.light.selected,
@@ -32,7 +33,40 @@ body.light {
     color: var(--darker-white);
 }
 
-/********************/
+/* landing page */
+.landing-logo.light {
+    background-image: url(../images/logo-light.png);
+    background-size: 100% var(--landing-height);
+    height: var(--landing-height);
+    width: 100%;
+}
+
+/* footer */
+.footer-bg.light {
+    background-image: url(../images/footer-light.png);
+    background-size: 100% var(--footer-height);
+    height: var(--footer-height);
+    width: 100%;
+}
+
+/* about page */
+.section-container.light {
+    background-image: url(../images/footer-light.png);
+}
+
+.panel.light {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.panel.light .content {
+    color: var(--black);
+}
+
+.neon.light {
+    color: var(--pastel-orange);
+}
+
+/*******    button itself   ********/
 .buttonBox {
     position: fixed;
     bottom: 0;
